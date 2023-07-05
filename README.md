@@ -19,7 +19,7 @@
   No installations are necessary to run this program in the web browser via heroku. Please run "npm i" in the terminal if you are using vs code or a similar program , and then node server.js to run the program on localhost:3001. 
 
   ## Usage<a name="usage"></a> 
-  To use this program, please visit the deployed heroku link. It will take you to the homepage. Then click on the "Get Started" button and it will take the user to a new page where they can input any information  they would like to include. To add a new note, click the plus symbol. Then type in a title and a description of what the to do list item is. Click the save icon in the top right corner to save it to the side abr. To delete something from the list, click the red trash can icon next to the list item. 
+  To use this program, please visit the deployed [heroku link](https://note-taker-express14-868d20e5eb89.herokuapp.com/). It will take you to the homepage. Then click on the "Get Started" button and it will take the user to a new page where they can input any information  they would like to include. To add a new note, click the plus symbol. Then type in a title and a description of what the to do list item is. Click the save icon in the top right corner to save it to the side abr. To delete something from the list, click the red trash can icon next to the list item. 
 
   ## Tests<a name="tests"></a>
   Testing has not yet been implemented.  
