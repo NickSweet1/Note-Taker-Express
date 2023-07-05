@@ -20,16 +20,7 @@ app.get('/api/notes', (req, res) => {
     console.log(data)
     res.json(data)
     
-    // fs.readFile(path.join(__dirname, './db/db.json'), 'utf8', (err, data) => {
-    //     if (err) {
-    //         console.error(err);
-    //         res.status(500).json({ error: "Server Error"});
-    //         return;
-    //     } else {
-    //         const notes = JSON.parse(data);
-    //         res.json(notes);
-    //     }
-    // })
+
 })
 
 app.post('/api/notes', (req, res) => {
@@ -48,13 +39,7 @@ app.post('/api/notes', (req, res) => {
 app.delete('/api/notes/:id', (req, res) => {
     const currentNotes = JSON.parse(fs.readFileSync(path.join(__dirname, './db/db.json'), 'utf8'));
     const updatedNotes = currentNotes.filter(note => note.id !== req.params.id)
-    // const newNote = {
-    //     id: uuidv4(),
-    //     title: req.body.title,
-    //     text: req.body.text
-    // }
-    
-    // currentNotes.push(newNote);
+
     fs.writeFileSync(path.join(__dirname, './db/db.json'), JSON.stringify(updatedNotes));
     res.json({message:"delete success"});
 })
